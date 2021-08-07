@@ -7,8 +7,16 @@
 body{
      background: hsl(0, 0%, 95%);
      background-repeat: no-repeat;
-     height: 100vh;
+     // height: 100vh;
      overflow: hidden;
+}
+
+.main-container{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     height: 100vh;
 }
 
 .level {
