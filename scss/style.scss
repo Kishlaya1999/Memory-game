@@ -29,6 +29,11 @@ body{
           padding: 10px;
           perspective: 1500px;
 
+          @media (max-width:710px) {
+               width: 500px;
+               height: 500px;
+          }
+
           .cardContainer {
                position: relative;
                transform-style: preserve-3d;

@@ -42,6 +42,13 @@ body {
           perspective: 1500px;
 }
 
+@media (max-width: 710px) {
+  .continer .gameContainer {
+    width: 500px;
+    height: 500px;
+  }
+}
+
 .continer .gameContainer .cardContainer {
   position: relative;
   -webkit-transform-style: preserve-3d;
