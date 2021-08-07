@@ -12,6 +12,40 @@ body {
   overflow: hidden;
 }
 
+.level {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px;
+  font-size: 1.5rem;
+}
+
+.level .options {
+  border: none;
+  background-color: #333;
+  color: #ffc966;
+  margin: 0 10px;
+  height: 25px;
+}
+
+.level #setLevel {
+  border: none;
+  margin: 0 10px;
+  background-color: #f07f7f;
+  width: 50px;
+  height: 25px;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.level #setLevel:hover {
+  background-color: #e41b1b;
+  color: white;
+}
+
 .continer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22,7 +56,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
 }
 
 .continer .gameContainer {

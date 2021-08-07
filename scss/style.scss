@@ -11,11 +11,40 @@ body{
      overflow: hidden;
 }
 
+.level {
+     display: flex;
+     justify-content: center;
+     margin: 20px;
+     font-size: 1.5rem;
+
+     .options {
+          border: none;
+          background-color: #333;
+          color: hsl(39, 750%, 70%);
+          margin: 0 10px;
+          height: 25px;
+     }
+
+     #setLevel {
+          border: none;
+          margin: 0 10px;
+          background-color: hsl(0, 79%, 72%);
+          width: 50px;
+          height: 25px;
+          transition: background-color 0.2s;
+
+          &:hover {
+               background-color: hsl(0, 79%, 50%);
+               color: white;
+          }
+     }
+}
+
 .continer {
      display: flex;
      align-items: center;
      justify-content: center;
-     height:100vh;
+     // height:100vh;
 
      .gameContainer {
           display: grid;
