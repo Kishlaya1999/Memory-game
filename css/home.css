@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #d8d8d8;
+}
+
+.picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.picture img {
+  max-width: 450px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70vh;
+}
+
+.menu .menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.menu .menu-list .menu-list-items {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#051937), color-stop(#0083cf), color-stop(#01bbcc), color-stop(#00bf72), to(#a8eb12));
+  background-image: linear-gradient(to right top, #051937, #0083cf, #01bbcc, #00bf72, #a8eb12);
+  width: 250px;
+  height: 50px;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50px;
+}
+
+.menu .menu-list .menu-list-items:hover {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#15468f), color-stop(#00a2ff), color-stop(#06d1e4), color-stop(#02e78c), to(#a5f100));
+  background-image: linear-gradient(to right top, #15468f, #00a2ff, #06d1e4, #02e78c, #a5f100);
+}
+
+.menu .menu-list a {
+  text-decoration: none;
+}
+
+.menu .menu-list .menu-link {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

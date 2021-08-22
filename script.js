@@ -1,8 +1,9 @@
-//TODO:Shuffling pictures array function
-//TODO:Think about the logic for inserting pictures randomly two times
+ // //TShuffling pictures array function
+// //Think about the logic for inserting pictures randomly two times
+//TODO:After opening two cards if not matched should be fliped if matching they shouuld be removed or stay unfliped
 //TODO:Create moves and scores section
 //TODO:Close privious two cards if third one is opened and increment the moves
-let pictures =[];
+let pictures = [];
 const pictures4x4 = [
      "./Images/AngularJS.png",
      "./Images/bootstrap.png",
@@ -97,8 +98,8 @@ const selectedLevel = document.getElementById("selectedLevel");
 const setLevel = document.getElementById("setLevel");
 
 
-
-document.addEventListener("DOMContentLoaded", function () {      //inserting the cards in page on loadig 
+//inserting the cards in page on loadig 
+document.addEventListener("DOMContentLoaded", function () {      
      shufflePictures(pictures4x4);
      for (let i = 0; i < 16; i++) {          //by default level is set to 4x4 so 16 cards are inserted in the page
           gameContainer.innerHTML +=
@@ -119,6 +120,7 @@ setLevel.addEventListener("click", function(e) {
      if(row == 4 && column == 4){pictures=pictures4x4}
      else if(row == 5 && column == 5){pictures=pictures5x5}
      else if(row == 6 && column == 6){pictures=pictures6x6}
+     shufflePictures(pictures);
      for (let j = 0; j < row * column; j++) {    //inserting the number of cards according to the level selected
           gameContainer.innerHTML +=
           `<div class="cardContainer">
@@ -132,11 +134,11 @@ setLevel.addEventListener("click", function(e) {
 });
 
 //A function that adds event listner in all the element with cardContainer class
-let cardClick = () => {       
+function cardClick() {       
      document.querySelectorAll(".cardContainer").forEach(function (card) {      //selecting all the elements with class 'cardContainer'
           card.addEventListener("click", function (e) {     //adding event listener in all the cards
                e.preventDefault();
-               // console.log(this.style);
+               // console.log(this.children[1].children[0].getAttribute("src"));
                let rotateCard = e.currentTarget;
                rotateCard.style.transform = "rotateY(180deg)";
                setTimeout(function () {
