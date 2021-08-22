@@ -91,7 +91,7 @@ body {
           perspective: 1500px;
 }
 
-@media (max-width: 710px) and (orientation: landscape) {
+@media (max-width: 710px) {
   .continer .gameContainer {
     width: 400px;
     height: 400px;
